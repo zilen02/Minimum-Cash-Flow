@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Minimize Cash Flow</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="header">
+        <h1 class="h1_text">Minimize Cash Flow</h1>
+        <div class="in">
+          <img class="in_i" src="./teamwork.svg" />
+        </div>
+      </div>
+
+      <div class="content">
+        <h5 id="msg1" class="h5_text"></h5>
+        <div id="que" class="que">
+          <h2 class="h2_text">How many people you are?</h2>
+          <input
+            type="text"
+            id="numberBox"
+            class="numberBox"
+            placeholder="Enter total number of people"
+          />
+          <button onclick="fetchN()" class="btn">Next &rarr;</button>
+        </div>
+        <div id="box2" class="box2">
+          <h5 id="msg2" class="h5_text"></h5>
+          <h2 id="h2_text" class="h2_text">Enter name & total money</h2>
+          <div id="fillarea" class="fillarea">
+            <!-- Fill with n area -->
+          </div>
+          <button onclick="calData()" class="btn">Next &rarr;</button>
+        </div>
+        <div id="ans" class="ans"></div>
+      </div>
+    </div>
+    <script src="./index.js" type="text/javascript"></script>
+  </body>
+</html>
